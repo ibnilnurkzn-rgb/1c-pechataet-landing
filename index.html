@@ -1,1 +1,524 @@
-test
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1С печатает… — ваша 1С сама напишет в Telegram, где бизнес теряет деньги</title>
+<meta name="description" content="Клиент пропал, товар завис, маржа просела — сервис видит это в вашей базе 1С и пишет в Telegram сам: что случилось, сколько в деньгах, что сейчас сделать. Любой вопрос по вашим цифрам — ответит за минуту.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a class="nav-logo" href="#top">
+      <span class="nav-wordmark">1С печатает…</span>
+      <span class="nav-glyphs" aria-hidden="true">
+        <svg viewBox="0 0 36 36" fill="none"><path d="M5 25L13 17L19 22L31 10" stroke="#2fae4e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 10H31V18" stroke="#2fae4e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 36 36" fill="none"><path d="M5 11L13 19L19 14L31 26" stroke="#ef3b34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 26H31V18" stroke="#ef3b34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13" stroke="#2fae4e" stroke-width="3.6"/><path d="M11.5 18.5L15.5 22.5L24.5 12.5" stroke="#2fae4e" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#cores">Как работает</a>
+      <a href="#assistant">Ассистент</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#faq">Вопросы</a>
+    </div>
+    <button class="btn btn-primary btn-small" data-open-lead-form>Оставить заявку</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="hero-tags">
+        <span class="hero-tag"><i class="dot dot-red"></i>Не ждёт вопроса. Пишет первым.</span>
+        <span class="hero-tag"><i class="dot dot-blue"></i>Любой вопрос по базе — ответит за минуту</span>
+      </div>
+      <h1>1С печатает … о рисках, возможностях и решениях ✅</h1>
+      <p class="lead">Клиент пропал, товар завис, маржа просела — сервис ловит это в базе и пишет вам в Telegram, что случилось и что делать. Одним сообщением. Спросите что угодно по своим цифрам — ответит за минуту, без бухгалтера и выгрузок.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary btn-lg" data-open-lead-form>Оставить заявку</button>
+      </div>
+      <div class="trust-row">
+        Работает поверх: <strong>1С:УТ · УНФ · КА · ERP · Бухгалтерия 3.0</strong>
+      </div>
+    </div>
+    <div>
+      <div class="tg-mock tg-mock-hero">
+        <div class="tg-mock-header">
+          <div class="tg-avatar">₽</div>
+          <div class="tg-mock-header-text">
+            <div class="name">1С печатает…</div>
+            <div class="status">в сети</div>
+          </div>
+        </div>
+        <div class="tg-bubble">
+          12 SKU просрочатся через 6 месяцев, если не запустить распродажу. Риск потерять ≈<span class="tg-amount">720 тыс ₽</span> выручки. Подготовил план по акции.
+          <div class="tg-attachment">📎 План_акции.xlsx</div>
+          <span class="tg-time">Сегодня, 08:31</span>
+        </div>
+        <div class="tg-bubble out">
+          А что у нас с остатками по сезонным товарам?
+          <span class="tg-time">11:12 <span class="tg-read">✓✓</span></span>
+        </div>
+        <div class="tg-bubble">
+          9 позиций закончатся раньше пикового спроса. Подготовил в Excel заказ поставщику. Самое важное — арт. 023215 Фильтр X200: остатка на 12 дней, пик продаж через три недели. Сделайте заказ до пятницы — ещё успеваете. Иначе рискуете потерять ≈<span class="tg-amount">1,2 млн ₽</span> валовой прибыли.
+          <div class="tg-attachment">📎 Заказ_поставщику.xlsx</div>
+          <span class="tg-time">11:14</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Боли -->
+<section class="bg-alt" id="pains">
+  <div class="container">
+    <div class="section-title">
+      <h2>Три владельца. Три базы. Один сценарий.</h2>
+      <p>Все трое узнали о проблеме из отчёта — спустя месяцы. Все три проблемы были видны в 1С с первого дня.</p>
+    </div>
+
+    <div class="vert-row">
+      <div class="vert-copy">
+        <span class="vert-kicker kicker-blue">Опт и дистрибуция</span>
+        <h3>По договору отсрочка 14 дней. По факту — 40.</h3>
+        <p class="quote-author">Ильяс <span>· ООО «Лидер Опт»</span></p>
+        <blockquote>«Дай Бог раз в месяц пробегаюсь по дебиторке, поднимаю должников, оказывается двое висят уже по 40 дней, а я им продолжал отгружать»</blockquote>
+      </div>
+      <div>
+        <p class="mock-caption">С сервисом это сообщение пришло бы само — в день, когда просрочка поползла:</p>
+        <div class="tg-bubble standalone">
+          Просроченная дебиторка выросла за месяц с 1,6 до <span class="tg-amount">2,4 млн ₽</span>. Худший — «Альфа-Трейд»: 1,1 млн, 6 дней просрочки, при этом заказывать продолжают. Придержите им следующую отгрузку до оплаты — рычаг есть.
+          <span class="tg-time">Сегодня, 09:02</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="vert-row reverse">
+      <div class="vert-copy">
+        <span class="vert-kicker kicker-green">Розница</span>
+        <h3>Наценка 45% на бумаге. В кассе — 31%.</h3>
+        <p class="quote-author">Артур <span>· ИП Сафин Артур</span></p>
+        <blockquote>«Разницу съели акции, скидки друзьям на кассе и пересорт. Вижу это раз в месяц в отчёте — когда уже ничего не исправить»</blockquote>
+      </div>
+      <div>
+        <p class="mock-caption">А могло прийти в первую же неделю:</p>
+        <div class="tg-bubble standalone">
+          На точке «Южная» средняя наценка по чекам упала с 43% до <span class="tg-amount">34%</span> за две недели. Причина — ручные скидки: 118 чеков со скидкой 15%+ у одного кассира. Стоит посмотреть журнал и камеры.
+          <span class="tg-time">Сегодня, 08:31</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="vert-row">
+      <div class="vert-copy">
+        <span class="vert-kicker kicker-red">Производство</span>
+        <h3>Квартал отгружали в ноль. Отчёты выглядели прилично.</h3>
+        <p class="quote-author">Руслан <span>· ООО «Альянс»</span></p>
+        <blockquote>«Металл подорожал в марте, а прайс мы пересчитали в июне. О том что мы теряли деньги три месяца узнал когда свели год»</blockquote>
+      </div>
+      <div>
+        <p class="mock-caption">Это сообщение пришло бы после первой же партии по новой цене:</p>
+        <div class="tg-bubble standalone">
+          Маржа по линейке «Профиль-40» упала с 24% до 11% за два месяца: закупка металла +18%, отпускная цена не менялась. Каждая отгрузка недобирает <span class="tg-amount">≈60 тыс ₽</span>. Пересмотрите прайс на этой неделе.
+          <span class="tg-time">Сегодня, 08:32</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Крупные цифры -->
+<section class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-number stat-red">40 дней</div>
+        <p>реально платят должники при отсрочке 14 дней по договору, потому что при них забывают</p>
+      </div>
+      <div class="stat">
+        <div class="stat-number stat-red">−14% наценки</div>
+        <p>съедают ручные скидки, акции и пересорт, ведь за ними никто не следит</p>
+      </div>
+      <div class="stat">
+        <div class="stat-number stat-red">3 месяца</div>
+        <p>проходит от роста себестоимости до пересмотра прайса, так как нет ответственного</p>
+      </div>
+    </div>
+    <div class="stats-punchline">1 сообщение от «1С печатает…» решает все эти проблемы</div>
+    <p class="stats-note">Цифры — из разборов 1С наших клиентов. Свои увидите в первую неделю после подключения.</p>
+  </div>
+</section>
+
+<!-- Два ядра -->
+<section id="cores">
+  <div class="container">
+    <div class="section-title">
+      <h2>Как это устроено</h2>
+      <p>Два режима. Работают одновременно.</p>
+    </div>
+    <div class="cores-grid">
+      <div class="core-panel">
+        <span class="core-kicker core-kicker-red">Режим 1 · Пишет первым</span>
+        <h3>Сам находит, где утекают деньги</h3>
+        <p>Круглосуточно сканирует базу: остатки, ритм заказов клиентов, дебиторку, маржу, план/факт. Что-то начало стоить денег — в Telegram падает сообщение.</p>
+        <div class="core-formula">
+          <span>факт из 1С</span><b>+</b><span>сумма в деньгах</span><b>+</b><span>что сделать</span>
+        </div>
+        <p class="core-note">Нет суммы и конкретного действия — сообщение не отправится. Никаких спам-сообщений.</p>
+      </div>
+      <div class="core-panel">
+        <span class="core-kicker core-kicker-blue">Режим 2 · Отвечает на вопросы</span>
+        <h3>Любой вопрос по базе — ответит за минуту</h3>
+        <p>Продажи, остатки, должники, закупки, маржа. Спрашиваете обычными словами в том же чате — ответ считается по вашей базе, а не по общим соображениям из интернета.</p>
+        <div class="core-formula">
+          <span>ваш вопрос</span><b>→</b><span>цифры из базы</span><b>→</b><span>ответ с рекомендацией</span>
+        </div>
+        <p class="core-note">Без ручного свода таблиц и «бухгалтер подготовит к четвергу».</p>
+      </div>
+    </div>
+
+    <div class="pillars-band">
+      <div class="pillars-title">Каждое утро — короткая сводка из трёх ответов</div>
+      <div class="pillars">
+        <div class="pillar">
+          <svg width="44" height="44" viewBox="0 0 36 36" fill="none"><path d="M4 25L13 16L19 22L32 9" stroke="#2fae4e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 9H32V18" stroke="#2fae4e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Где мы выросли?</span>
+        </div>
+        <div class="pillar">
+          <svg width="44" height="44" viewBox="0 0 36 36" fill="none"><path d="M4 11L13 20L19 14L32 27" stroke="#ef3b34" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 27H32V18" stroke="#ef3b34" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Где мы теряем?</span>
+        </div>
+        <div class="pillar">
+          <svg width="44" height="44" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="#2fae4e" stroke-width="3.2"/><path d="M11 18.5L15.5 23L25.5 12" stroke="#2fae4e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Что сделать прямо сейчас?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Демо ассистента -->
+<section class="bg-alt" id="assistant">
+  <div class="container">
+    <div class="section-title">
+      <h2>Спросите его, как спросили бы зама</h2>
+      <p>Четыре реальных вопроса владельцев — нажмите и посмотрите ответ</p>
+    </div>
+    <div class="demo-wrap">
+      <div class="chips" role="tablist" aria-label="Примеры вопросов ассистенту">
+        <button class="chip active" data-demo="d1" role="tab" aria-selected="true">Сколько закупить к Новому году?</button>
+        <button class="chip" data-demo="d2" role="tab" aria-selected="false">Почему просела выручка за неделю?</button>
+        <button class="chip" data-demo="d3" role="tab" aria-selected="false">Какую акцию сейчас запустить?</button>
+        <button class="chip" data-demo="d4" role="tab" aria-selected="false">Кто задолжал больше всех?</button>
+      </div>
+      <div class="tg-mock tg-mock-demo">
+        <div class="tg-mock-header">
+          <div class="tg-avatar">₽</div>
+          <div class="tg-mock-header-text">
+            <div class="name">1С печатает…</div>
+            <div class="status">в сети</div>
+          </div>
+        </div>
+        <div class="demo-dialog active" data-demo-panel="d1">
+          <div class="tg-bubble out">Сколько нам товара закупить к Новому году, если смотреть по прошлому декабрю?<span class="tg-time">14:05</span></div>
+          <div class="tg-bubble">В прошлом декабре продажи выросли на 64% к ноябрю, и 12 ходовых позиций закончились уже к 18-му числу — на них вы недобрали <span class="tg-amount">≈1,9 млн ₽</span>. Чтобы пройти пик без дефицита, закажите примерно на 4,3 млн ₽ до 25 ноября. Сильнее всего рискуете по «Гирлянда уличная» (в декабре темп ×3), наборам №7 и №12 и подарочной упаковке «Изумруд». Прислать разбивку по поставщикам?<span class="tg-time">14:05</span></div>
+        </div>
+        <div class="demo-dialog" data-demo-panel="d2">
+          <div class="tg-bubble out">Почему просела выручка по рознице на этой неделе?<span class="tg-time">18:40</span></div>
+          <div class="tg-bubble">Минус <span class="tg-amount">340 тыс ₽</span> к прошлой неделе (−12%). Главная причина — точка на Гагарина: −28%, с четверга там нет трёх позиций-локомотивов, заказ №4187 завис у поставщика. Остальные точки в пределах обычных колебаний. Если заказ не приедет до пятницы, неделя закроется ещё на ≈180 тыс ₽ хуже.<span class="tg-time">18:40</span></div>
+        </div>
+        <div class="demo-dialog" data-demo-panel="d3">
+          <div class="tg-bubble out">На какую акцию сейчас лучше сделать ставку?<span class="tg-time">10:22</span></div>
+          <div class="tg-bubble">По вашей истории февраль лучше всего отзывается на скидку в «Автохимии»: в прошлом году −15% дали <span class="tg-amount-green">+38%</span> к обороту категории, маржа удержалась на 27%. «Инструмент» трогать не советую — маржа там и так 12%, акция уйдёт в минус. Могу посчитать прогноз по трём сценариям скидки.<span class="tg-time">10:22</span></div>
+        </div>
+        <div class="demo-dialog" data-demo-panel="d4">
+          <div class="tg-bubble out">Сколько у нас зависло в дебиторке по опту и кто главные должники?<span class="tg-time">09:15</span></div>
+          <div class="tg-bubble">Всего 6,8 млн ₽, из них просрочено <span class="tg-amount">2,4 млн ₽</span>. Три клиента дают 71% просрочки: «Альфа-Трейд» — 1.128.240 ₽ (48 дней), «Мегаполис» — 700.420 ₽ (35 дней), ИП Сафин — 394.240 ₽ (30 дней). Начните с «Альфа-Трейд»: они продолжают заказывать, так что рычаг у вас есть.<span class="tg-time">09:15</span></div>
+        </div>
+      </div>
+      <p class="demo-note">Ответы считает не нейросеть — цифры берутся напрямую из вашей базы, ИИ только формулирует их по-человечески.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Каталог сигналов -->
+<section id="signals">
+  <div class="container">
+    <div class="section-title">
+      <h2>Вот о чём он напишет сам, даже если вы не спрашивали</h2>
+      <p>Четыре направления мониторинга. Пороги настраиваются под вас — по мелочи дёргать не будет.</p>
+    </div>
+    <div class="grid-4">
+      <div class="card signal-cat">
+        <div class="signal-emoji">📦</div>
+        <h3>Склад</h3>
+        <ul>
+          <li>Срок годности истечёт раньше, чем товар продастся. План распродажи.</li>
+          <li>Товар закончится до поставки или перед сезоном. Список закупа.</li>
+          <li>Позиции без движения 90+ дней на 1,1 млн ₽. Запуск акции.</li>
+          <li>Закупаете быстрее, чем продаёте. Остаток более чем на 12+ месяцев.</li>
+        </ul>
+      </div>
+      <div class="card signal-cat">
+        <div class="signal-emoji">👥</div>
+        <h3>Клиенты</h3>
+        <ul>
+          <li>Клиент сбился с привычного ритма заказов. Нужно позвонить.</li>
+          <li>Средний чек клиента пополз вниз. Список сопутки по его категории.</li>
+          <li>Просроченная дебиторка растёт. Список для обзвона.</li>
+        </ul>
+      </div>
+      <div class="card signal-cat">
+        <div class="signal-emoji">💰</div>
+        <h3>Деньги</h3>
+        <ul>
+          <li>Кассовый разрыв придётся на 20-е число. Варианты выхода.</li>
+          <li>Маржа падает — по товару, категории или направлению. Анализ рентабельности.</li>
+          <li>Статья расходов растёт быстрее её влияния на оборот. Варианты оптимизации.</li>
+        </ul>
+      </div>
+      <div class="card signal-cat">
+        <div class="signal-emoji">📈</div>
+        <h3>Продажи</h3>
+        <ul>
+          <li>План/факт с причиной отставания, а не просто процентом</li>
+          <li>Резкое падение по товару, менеджеру или точке</li>
+          <li>Скидки съедают наценку сверх нормы</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Как подключить -->
+<section class="bg-alt" id="how">
+  <div class="container">
+    <div class="section-title">
+      <h2>Что нужно с вашей стороны</h2>
+      <p>Ничего. Мы сами подключимся и всё настроим</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Подключаете 1С за один день</h3>
+        <p>Ставится как обычное расширение, без доработки конфигурации. База остаётся на поддержке, ничего не переписывается.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Сервис изучает ваш бизнес</h3>
+        <p>Ритм заказов каждого клиента, оборачиваемость, сезонность — пороги настраиваются под ваши реальные цифры.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Вы читаете Telegram две минуты в день</h3>
+        <p>Утром — сводка. Днём — сообщение, только если что-то стоит денег. Возник вопрос — задали и получили ответ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Тарифы -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-title">
+      <h2>Тарифы</h2>
+      <p>Один пойманный неликвид или удержанный клиент окупает подписку на год вперёд.</p>
+    </div>
+
+    <div class="price-toggle">
+      <span>Помесячно</span>
+      <button class="switch" id="price-switch" type="button" aria-label="Переключить на годовую оплату"></button>
+      <span>За год <span class="save-badge">2 месяца в подарок</span></span>
+    </div>
+
+    <div class="grid-3 plans-grid">
+      <div class="card plan-card">
+        <div class="plan-name">Старт</div>
+        <div class="plan-for">Проверить сервис на самом больном месте</div>
+        <div class="plan-price"><span class="price-amount" data-monthly="4900" data-annual="4080">4 900 ₽</span><span>/мес</span></div>
+        <div class="plan-price-annual-note"></div>
+        <ul class="plan-list">
+          <li><span class="tick">✓</span> Сигналы по одному направлению: склад, клиенты, деньги или продажи</li>
+          <li><span class="tick">✓</span> Утренняя сводка в Telegram</li>
+          <li><span class="tick">✓</span> Ассистент: 30 вопросов в месяц</li>
+          <li><span class="tick">✓</span> Один получатель</li>
+        </ul>
+        <button class="btn btn-secondary btn-block" data-open-lead-form>К оплате</button>
+      </div>
+      <div class="card plan-card popular">
+        <div class="plan-badge">Выбирают чаще всего</div>
+        <div class="plan-name">Директор</div>
+        <div class="plan-for">Полная картина по бизнесу + ассистент без ограничений</div>
+        <div class="plan-price"><span class="price-amount" data-monthly="9900" data-annual="8250">9 900 ₽</span><span>/мес</span></div>
+        <div class="plan-price-annual-note"></div>
+        <ul class="plan-list">
+          <li><span class="tick">✓</span> Все 4 направления мониторинга</li>
+          <li><span class="tick">✓</span> <b>Ассистент без лимита вопросов</b></li>
+          <li><span class="tick">✓</span> Утренняя сводка + разбор недели по понедельникам</li>
+          <li><span class="tick">✓</span> До 3 получателей в Telegram</li>
+          <li><span class="tick">✓</span> Свои пороги и правила</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-open-lead-form>К оплате</button>
+      </div>
+      <div class="card plan-card">
+        <div class="plan-name">Команда</div>
+        <div class="plan-for">Несколько баз и руководители направлений</div>
+        <div class="plan-price"><span class="price-amount" data-monthly="19900" data-annual="16580">19 900 ₽</span><span>/мес</span></div>
+        <div class="plan-price-annual-note"></div>
+        <ul class="plan-list">
+          <li><span class="tick">✓</span> Всё из тарифа «Директор»</li>
+          <li><span class="tick">✓</span> Ассистент без лимита — для каждого получателя</li>
+          <li><span class="tick">✓</span> До 10 получателей и роли доступа</li>
+          <li><span class="tick">✓</span> Несколько баз 1С в одном чате</li>
+          <li><span class="tick">✓</span> Настройка правил под ключ вместе с нами</li>
+        </ul>
+        <button class="btn btn-secondary btn-block" data-open-lead-form>К оплате</button>
+      </div>
+    </div>
+
+    <div class="trust-badges">
+      <div class="trust-badge">
+        <svg width="28" height="28" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="#2fae4e" stroke-width="3"/><path d="M11 18.5L15.5 23L25.5 12" stroke="#2fae4e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Возврат платежа по первому запросу
+      </div>
+      <div class="trust-badge">
+        <svg width="28" height="28" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="#2fae4e" stroke-width="3"/><path d="M11 18.5L15.5 23L25.5 12" stroke="#2fae4e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Подключение без доработки вашей конфигурации 1С
+      </div>
+      <div class="trust-badge">
+        <svg width="28" height="28" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="#2fae4e" stroke-width="3"/><path d="M11 18.5L15.5 23L25.5 12" stroke="#2fae4e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Ваши данные остаются в вашем контуре
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container container-narrow">
+    <div class="section-title">
+      <h2>Вопросы, которые обычно задают</h2>
+    </div>
+    <details class="faq-item">
+      <summary>Насколько это безопасно для моей базы 1С?</summary>
+      <p>Модуль работает внутри вашего контура как обычное расширение. Наружу уходят только агрегированные цифры для конкретного сообщения по зашифрованному каналу — не сама база, не документы, не персональные данные клиентов. Нейросеть не обучается на ваших данных. По запросу есть полностью изолированный вариант on-premise.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Ассистент не выдумает цифры, как ChatGPT?</summary>
+      <p>Нет. Все расчёты делает детерминированный движок по вашей базе — та же математика, что в отчётах 1С, просто автоматическая. Нейросеть не считает, а только формулирует готовый ответ с пояснениями. К каждой цифре прилагается источник: каким отчётом 1С её перепроверить.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Чем это отличается от чат-ботов к 1С?</summary>
+      <p>В части «спросить и получить ответ» — мы делаем то же самое. Разница в другом: чат-бот молчит, пока вы не спросите, а мы пишем первыми — в момент, когда возникла проблема, о которой вы, возможно, вообще не думали. Проблемы редко приходят по расписанию ваших вопросов.</p>
+    </details>
+    <details class="faq-item">
+      <summary>У нас сильно доработанная база — вы разберётесь?</summary>
+      <p>Поддерживаем типовые конфигурации 8.3: УТ 11, УНФ, КА, ERP, Бухгалтерию 3.0. При подключении сервис анализирует метаданные и находит нужные регистры даже в доработанных базах. В сложных случаях наш специалист подключается удалённо — бесплатно на тарифах «Директор» и «Команда».</p>
+    </details>
+    <details class="faq-item">
+      <summary>Нужен программист для подключения?</summary>
+      <p>Нет. Расширение ставится за один день по инструкции — силами вашего сисадмина или нашего специалиста удалённо. База не снимается с поддержки, конфигурация не меняется. Подключение включено в тариф.</p>
+    </details>
+    <details class="faq-item">
+      <summary>У меня есть бухгалтер. Зачем ещё это?</summary>
+      <p>Бухгалтер считает прошлое для налоговой — это его работа, и она никуда не денется. Мы про то, что будет: что спишется, кто уйдёт, где кончится товар, когда не хватит денег. Бухгалтер вам такое не приносит — не потому что плохо работает, просто у него другие задачи.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Вы не завалите меня уведомлениями?</summary>
+      <p>Нет. Сообщение приходит, только когда сработало правило и на кону реальные деньги. Пороги настраиваются: например, «не беспокоить по суммам меньше 50 тысяч». Нет поводов — будет только короткая утренняя сводка.</p>
+    </details>
+    <details class="faq-item">
+      <summary>30 вопросов ассистенту на «Старте» — а если не хватит?</summary>
+      <p>Практика такая: первые недели вопросов много, потом сервис сам начинает приносить главное, и спрашивать приходится реже. Если упёрлись в лимит — переход на «Директор» с безлимитом делается в один клик, доплата пропорционально остатку месяца.</p>
+    </details>
+    <details class="faq-item">
+      <summary>А если у меня 1С 7.7 или файловая база?</summary>
+      <p>7.7 пока не поддерживаем — но напишите нам, такие запросы мы учитываем в планах. Файловые базы на платформе 8.3 поддерживаются.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Что будет после того, как я оставлю заявку?</summary>
+      <p>Сервис ещё дорабатывается, поэтому прямо сейчас с вас ничего не спишется. Вы попадаете в список первых, а если поддержите нас предоплатой — зафиксируем за вами скидку −50% на первые 3 месяца.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Можно ли будет отменить подписку?</summary>
+      <p>Да, в любой момент по первому запросу. При помесячной оплате следующий месяц просто не списывается.</p>
+    </details>
+  </div>
+</section>
+
+<!-- Финальный CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Ваша 1С уже всё посчитала. Дайте ей наконец сказать.</h2>
+    <p class="final-cta-sub">Заявка ни к чему не обязывает — но фиксирует за вами место в числе первых и скидку.</p>
+    <div class="final-cta-actions">
+      <button class="btn btn-primary btn-lg" data-open-lead-form>Оставить заявку</button>
+      <a class="btn btn-secondary btn-lg" href="https://t.me/ilyas_mazaev" target="_blank" rel="noopener">Задать вопрос в Telegram разработчику</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>1С печатает… — независимый сервис, не является продуктом фирмы «1С». © 2026</p>
+    <p class="footer-disclaimer">Сайт работает в режиме теста спроса на разрабатываемый продукт. Информация на сайте, включая тарифы и условия, носит ознакомительный характер и не является публичной офертой в значении статьи 437 ГК РФ.</p>
+  </div>
+</footer>
+
+<!-- Модальное окно: форма лида -->
+<div class="modal-overlay" id="lead-modal-overlay">
+  <div class="modal">
+    <button class="modal-close" type="button" data-close-lead-form aria-label="Закрыть">&times;</button>
+    <h3>Оставить заявку</h3>
+    <p class="modal-sub">Пара полей — и дальше короткая страница о том, что будет после запуска.</p>
+    <div class="form-error-banner" id="lead-form-error">Проверьте, пожалуйста, поля формы.</div>
+    <form id="lead-form" novalidate>
+      <div class="field" data-field="name">
+        <label for="lead-name">Имя</label>
+        <input type="text" id="lead-name" name="name" autocomplete="name" required>
+        <span class="field-error">Укажите имя</span>
+      </div>
+      <div class="field" data-field="phone">
+        <label for="lead-phone">Телефон</label>
+        <input type="tel" id="lead-phone" name="phone" autocomplete="tel" required placeholder="+7 900 000-00-00">
+        <span class="field-error">Укажите телефон в формате +7...</span>
+      </div>
+      <div class="field" data-field="contact">
+        <label for="lead-contact">Почта или ник в Telegram</label>
+        <input type="text" id="lead-contact" name="contact" autocomplete="email" required placeholder="you@company.ru или @username">
+        <span class="field-error">Укажите почту или @username</span>
+      </div>
+      <div class="field" data-field="position">
+        <label for="lead-position">Должность</label>
+        <input type="text" id="lead-position" name="position" required placeholder="Собственник / директор">
+        <span class="field-error">Укажите должность</span>
+      </div>
+      <div class="field" data-field="company">
+        <label for="lead-company">Название компании</label>
+        <input type="text" id="lead-company" name="company" required>
+        <span class="field-error">Укажите компанию</span>
+      </div>
+
+      <div class="field-checkbox" data-field="privacyConsent">
+        <input type="checkbox" id="lead-privacy" name="privacyConsent">
+        <label for="lead-privacy">Согласен(-на) с <a href="privacy-policy.html" target="_blank" rel="noopener">политикой конфиденциальности</a> и обработкой персональных данных</label>
+      </div>
+      <div class="field-checkbox">
+        <input type="checkbox" id="lead-marketing" name="marketingConsent">
+        <label for="lead-marketing">Хочу получать новости о запуске и специальные предложения (<a href="newsletter-consent.html" target="_blank" rel="noopener">подробнее</a>)</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" id="lead-form-submit">Продолжить</button>
+      <span class="btn-fine-print">Ни к чему не обязывает</span>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
