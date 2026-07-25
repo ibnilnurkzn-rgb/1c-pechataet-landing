@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Заявка принята — 1С печатает…</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="payment-page">
+  <div class="payment-card wide" id="payment-before">
+    <h1>Заявка принята ✓</h1>
+    <p>
+      Сервис сейчас в разработке. Мы тестируем спрос, собираем первых клиентов, под чьи нужды и задачи допиливаем продукт. Вы, <span class="payment-lead-name" id="payment-lead-name">коллега</span>, в этом списке.
+    </p>
+    <p>Но на доработку сервиса нам нужна ваша поддержка. Если оставите предоплату, вы зафиксируете скидку в 50% на первые 3 месяца и первыми получите доступ к продукту.</p>
+
+    <div class="card plan-card popular support-plaque">
+      <div class="plan-badge">Поддержать проект</div>
+      <div class="plan-name">Предоплата</div>
+      <div class="plan-price">4 990 ₽</div>
+      <div class="plan-price-annual-note">фиксирует скидку −50% на первые 3 месяца подписки</div>
+      <ul class="plan-list">
+        <li><span class="tick">✓</span> Доступ первыми — до открытого запуска</li>
+        <li><span class="tick">✓</span> Подключение вместе со специалистом</li>
+        <li><span class="tick">✓</span> Скидка −50% на первые 3 месяца закреплена за вами</li>
+      </ul>
+      <button class="btn btn-primary btn-block" id="pay-button">Поддержать</button>
+    </div>
+
+    <span class="btn-fine-print">Если вдруг передумаете, возврат оплаты делаем по первому запросу.</span>
+    <div class="form-error-banner" id="payment-error">Не получилось создать платёж. Попробуйте ещё раз чуть позже или напишите нам в Telegram.</div>
+
+    <a class="back-link" href="index.html">← Вернуться на главную</a>
+  </div>
+
+  <div class="payment-card wide" id="payment-after" style="display:none;">
+    <span class="eyebrow">Спасибо ✓</span>
+    <h1>Мы вас увидим на своей стороне</h1>
+    <p>Как только платёж подтвердится, мы свяжемся с вами в Telegram, чтобы обсудить подключение. Скидка −50% на первые 3 месяца уже закреплена.</p>
+    <a class="back-link" href="index.html">← Вернуться на главную</a>
+  </div>
+</div>
+
+<script src="js/payment.js"></script>
+</body>
+</html>
